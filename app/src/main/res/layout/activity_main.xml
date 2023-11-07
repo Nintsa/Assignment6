@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="100dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_1">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/first_name"
+        android:layout_marginTop="23dp"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:hint="@string/firstname"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="55dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/last_name"
+        android:layout_marginTop="23dp"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:hint="@string/lastname"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="55dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/age"
+        android:layout_marginTop="23dp"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:hint="@string/age"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="55dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/mail"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="55dp"
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="55dp">
+
+        <Button
+            android:id="@+id/addUserBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/add_user"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeUserBtn"
+        android:layout_marginTop="23dp"
+        android:gravity="center_horizontal"
+        android:text="@string/remove_user"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateUserBtn"
+        android:layout_marginTop="23dp"
+        android:gravity="center_horizontal"
+        android:text="@string/update_user"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_weight="1"
+        />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/result"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="55dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/activeUsers"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="55dp"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/deletedUsers"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="55dp"
+        android:textColor="@color/white"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
